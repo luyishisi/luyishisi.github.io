@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+}
+h1 {
+  font-size: 4em;
+}
+p {
+  font-size: 2em;
+  color: #3C8EDA;
+}
+#board {
+  padding: 2px;
+  background: #4d4d4d;
+  margin: 50px;
+  display: inline-block;
+  clear: both;
+}
+.row {
+  clear: both;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.tile {
+  float: left;
+  margin: 4px;
+  width: 70px;
+  height: 70px;
+  background: #e6ab5e;
+  cursor: pointer;
+}
+.tile.on {
+  background: #5c90ff;
+}
+.clear {
+  clear: both;
+}
