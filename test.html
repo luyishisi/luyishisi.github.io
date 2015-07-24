@@ -30,6 +30,7 @@
                 var dx = [0, 0, 1, 0, -1];//用于找上下左右格子
                 var dy = [0, 1, 0, -1, 0];//用于找上下左右格子
                 var buf;
+                var k=0;
                 for(var d = 0; d < 5; ++d) {
                     col += dx[d]; row += dy[d];//五个位置都找一遍
                     if(col >=0 && col < vm.sz && row >=0 && row < vm.sz) {
@@ -41,6 +42,12 @@
                     }
                     col -= dx[d]; row -= dy[d];//再回归到中间位置
                 }
+                for(var j=0; j < vm.sz*vm.sz;j++)
+                {
+                    if(vm.grid[j]==1)k++;
+                    if(k==(vm.sz*vm.sz)-1)
+                        alert("恭喜胜利");
+                }
             }
         });
         vm.$watch('sz', function(val) {
@@ -49,9 +56,10 @@
             vm.grid.clear();
             for(i = 0; i < val * val; ++i) vm.grid.push(0);
         });
-        vm.sz = 5;
+        vm.sz = 3;
         function up(){
             vm.sz++;
+            if(vm.sz>15){alert("别乱点");vm.sz=14;}
         }
         function down(){
             vm.sz--;
