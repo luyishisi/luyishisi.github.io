@@ -47,13 +47,29 @@ function shuaxin()
    }
     //alert(Math.floor(Math.random()*(2-1+1)+1)*2);
 }
+touch.on('#target', 'touchstart', function(ev){
+    ev.preventDefault();
+});
 
+var target = document.getElementById("target");
+target.style.webkitTransition = 'all ease 0.2s';
+
+touch.on(target, 'swiperight', function(ev){
+    this.style.webkitTransform = "translate3d(" + rt + "px,0,0)";
+    log("向右滑动.");
+    alert("asd");
+});
+
+touch.on(target, 'swipeleft', function(ev){
+    log("向左滑动.");
+    this.style.webkitTransform = "translate3d(-" + this.offsetLeft + "px,0,0)";
+});
 function getKey(e){
     e = e || window.event;
     var keycode = e.which ? e.which : e.keyCode;
     var i,j;
     if(keycode == 38){
-        //alert("上");
+        //alert("上");j
         for(j=0;j<=3;j++)
         {
             for(i=0;i<=3;i++)
