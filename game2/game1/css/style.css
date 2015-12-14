@@ -1,0 +1,58 @@
+.html {
+  font-size: 5vw;
+}
+.head {
+  background-color: #21292c;
+  width: 100%;
+  height: 3em;
+}
+.head .head-title {
+  color: #ffffff;
+  font-size: 1.3em;
+  line-height: 2;
+  text-align: center;
+}
+.head .header-left {
+  float: left;
+}
+.head .header-left img {
+  width: 2.4em;
+  padding-left: .5em;
+  padding-top: .2em;
+}
+.head .header-right {
+  float: right;
+}
+.head .header-right img {
+  width: 2em;
+  padding-top: .2em;
+  padding-right: .5em;
+}
+.img-display .display1 img {
+  width: 100%;
+}
+.main {
+  width: 81%;
+}
+.main .main-box {
+  padding-bottom: 1.2em;
+  padding-left: .2em;
+}
+.main .main-box .img-box {
+  width: 100%;
+}
+.main .main-box .img-box .img-display img {
+  float: left;
+  width: 20%;
+}
+.main .main-box .text-box {
+  padding-left: 5em;
+}
+.main .main-box .text-box p {
+  color: #9e9e9e;
+  line-height: 1.3;
+}
+.main .main-box .text-box p:first-child {
+  color: black;
+  font-size: 1.2em;
+}

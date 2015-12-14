@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>美食</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>鹏润房地产</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".main-li").hover(function(){
+		$(this).children(".sub-menu").show().prev("a").css({"color":"#000","text-decoration":"underline"});
+	},function(){
+		$(this).children(".sub-menu").hide().prev("a").css({"color":"#9E6107","text-decoration":"none"});
+	});
+	$(".sub-menu .main-li2").hover(function(){
+		$(this).children(".li2-a").css({"background-color":"#BB0708","color":"#fff","text-decoration":"underline"});
+		$(this).children(".sub-menu-two").show();
+	},function(){
+		$(this).children(".li2-a").css({"background-color":"#E88713","color":"#BB0708","text-decoration":"none"});
+		$(this).children(".sub-menu-two").hide();
+	});
+	
+});
+</script>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <div id="container">
+     <div id="top">
+	     <div id="logo">
+		    <div id="links">
+			   <ul>
+			     <li><a href="#">注册</a></li>
+				 <li><a href="#">网站地图</a></li>
+				 <li><a href="#">联系我们</a></li>
+			   </ul>
+			</div>
+			<div id="menu">
+			   <ul class="main-menu">
+		     <li class="main-li"><a class="li-a" href="#">视 频</a></li>
+			 <li class="main-li" style="font-weight:lighter;">|</li>
+		     <li class="main-li"><a class="li-a" href="#">调 味</a>
+			     <ul class="sub-menu">
+				<li class="main-li2"><a class="li2-a" href="#">酱 油</a></li>
+				<li class="main-li2"><a class="li2-a" href="#">米 错</a></li>
+			    </ul>
+			
+		     </li>
+			 <li class="main-li" style="font-weight:lighter;">|</li>
+		     <li class="main-li"><a class="li-a" href="#">原 料</a>
+             	<ul class="sub-menu">
+				<li class="main-li2"><a class="li2-a" href="#">大 葱</a></li>
+				<li class="main-li2"><a class="li2-a" href="#">生 姜</a></li>
+			    </ul>
+             </li>
+			 <li class="main-li" style="font-weight:lighter;">|</li>
+		     <li class="main-li"><a class="li-a" href="#">小 吃</a>
+             	<ul class="sub-menu">
+				<li class="main-li2"><a class="li2-a" href="#">汤 包</a></li>
+				<li class="main-li2"><a class="li2-a" href="#">小 龙</a></li>
+			    </ul>
+             </li>
+			 <li class="main-li" style="font-weight:lighter;">|</li>
+		     <li class="main-li"><a class="li-a" href="#">菜 谱</a>
+             	<ul class="sub-menu">
+				<li class="main-li2"><a class="li2-a" href="#">粤 菜</a></li>
+				<li class="main-li2"><a class="li2-a" href="#">鲁 菜</a></li>
+			    </ul>
+             </li>
+			 <li class="main-li" style="font-weight:lighter;">|</li>
+		     <li class="main-li"><a class="li-a" href="#">生活百科</a></li>
+	     </ul>
+			</div>
+		 </div>
+		 <div id="banner">
+		    <div id="tuijian">
+			   <span>粉红香莲</span>
+			   <p><a href="#">鲜艳的色泽，清爽的口味</a></p>
+			</div>
+			<div id="tuijianrg">
+			   <span>清水芙蓉</span>
+			   <p><a href="#">水中的莲藕，清爽的口味</a></p>
+			</div>
+		 </div>
+	 </div>
+	 <div id="main">
+	    <div id="left">
+		   <div id="leftcontent"><p>水果以清甜的口味，健康的营养成分收到了大众的喜爱......</p></div>
+		   <div id="leftimgwrap"><a href="#"><img src="images/004.jpg" /></a></div>
+		</div>
+		<div id="center">
+		   <div id="imgwraprg"><img src="images/pic_01.gif" /></div>
+		   <div id="centerrg">
+		      <div class="good">食疗<span class="#000">&amp;</span>食补</div>
+			  <div class="more"><a href="#"><img src="images/icon_02.gif" /></a></div>
+			  <ul>
+			     <li><a href="#">刷牙出血要补维生素C(图)</a></li>
+				 <li><a href="#">女人郁闷吃这9种食物(组图)</a></li>
+				 <li><a href="#">保护眼睛电脑一族“养眼”食谱(组图)</a></li>
+				 <li><a href="#">夏季生活 十大养生诀窍(图)</a></li>
+				 <li><a href="#">土豆（马铃薯）治胃病有一招(图)</a></li>
+				 <li><a href="#">女人食疗补肾 体现美丽与健康(图)</a></li>
+			  </ul>
+		   </div>
+		</div>
+		<div id="right">
+		   <div id="hotphone"><img src="images/phone.gif" /></div>
+		   <div id="phonebt">
+		      <div class="taocan"><img src="images/icon_03.gif" style="vertical-align:middle; padding-right:10px;"/> <a href="#">营养搭配餐</a></div>
+			  <div class="taocan"><img src="images/icon_04.gif" style="vertical-align:middle; padding-right:10px;"/><a href="#"> 实惠搭配餐</a></div>
+		   </div>
+		</div>
+	 </div>
+	 <div id="footer">
+	    <div id="copyright">
+		   <p>copyright &copy; 1999-2009 www.bjcate.com All Rights Reserved</p>
+		   <p style="padding-left:55px;">美食每刻网 版权所有 京ICP备0604511111号</p>
+		</div>
+	 </div>
+  </div>
+</body>
+</html>
