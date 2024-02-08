@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .container:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+        section p:last-child {
+            margin-bottom: 0;
+        }
+        .container:hover h1, .container:hover h2 {
+            color: #ff6600;
+        }
+        @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            56% { color: blue; }
+            70% { color: indigo; }
+            84% { color: violet; }
+            100% { color: red; }
+        }
+        .container:hover span {
+            animation: rainbow 5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>个人简历</h1>
+        </header>
+        <section>
+            <h2>基本信息</h2>
+            <p>姓名：张三</p>
+            <p>年龄：25岁</p>
+            <p>邮箱：zhangsan@example.com</p>
+            <p>电话：123-456-7890</p>
+        </section>
+        <section>
+            <h2>教育背景</h2>
+            <p>学校：某某大学</p>
+            <p>专业：计算机科学与技术</p>
+            <p>学历：本科</p>
+            <p>毕业时间：201X年</p>
+        </section>
+        <section>
+            <h2>工作经历</h2>
+            <p>公司：ABC科技有限公司</p>
+            <p>职位：软件工程师</p>
+            <p>工作内容：负责Web应用程序开发</p>
+            <p>工作时间：201X年至今</p>
+        </section>
+        <section>
+            <h2>技能</h2>
+            <p>编程语言：Java, JavaScript, Python</p>
+            <p>前端技术：HTML, CSS, JavaScript, React</p>
+            <p>后端技术：Node.js, Spring Boot</p>
+        </section>
+        <section>
+            <h2>兴趣爱好</h2>
+            <p>阅读、旅行、摄影</p>
+        </section>
+    </div>
+</body>
+</html>
